@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Magic Calander</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/fontawesome.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container bg-light mt-5" id="calander-container">
+      <div id="calendar"></div>
+    </div>
+    <div class="submitButton">
+      <button id="addEvent" class="button" role="button">add event</button>
+    </div>
+
+    <div class="container mt-5" id="eventForm">
+      <div class="card custom-card">
+        <div class="card-body">
+          <h5 class="card-title">Event Details</h5>
+
+          <!-- Title Input -->
+          <div class="form-group custom-form-group">
+            <label for="title">Title:</label>
+            <input
+              type="text"
+              class="form-control custom-input"
+              id="title"
+              placeholder="Enter title"
+              required
+            />
+          </div>
+
+          <!-- Starting Date Input -->
+          <div class="form-group custom-form-group">
+            <label for="startDate">Starting Date:</label>
+            <input
+              type="date"
+              class="form-control custom-input"
+              id="startDate"
+              required
+            />
+          </div>
+
+          <!-- End Date Input -->
+          <div class="form-group custom-form-group">
+            <label for="endDate">End Date:</label>
+            <input
+              type="date"
+              class="form-control custom-input"
+              id="endDate"
+              required
+            />
+          </div>
+
+          <!-- Starting Time Input -->
+          <div class="form-group custom-form-group">
+            <label for="startTime">Starting Time:</label>
+            <input
+              type="time"
+              class="form-control custom-input"
+              id="startTime"
+              required
+            />
+          </div>
+
+          <!-- End Time Input -->
+          <div class="form-group custom-form-group">
+            <label for="endTime">End Time:</label>
+            <input
+              type="time"
+              class="form-control custom-input"
+              id="endTime"
+              required
+            />
+          </div>
+
+          <!-- Submit Button -->
+          <button type="button" class="btn btn-primary" id="submit">
+            Submit
+          </button>
+          <button type="button" class="btn btn-danger" id="cancel">
+            Cancel
+          </button>  
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js"></script>
+    <script src="script.js"></script>
+    <script src="functionScript.js"></script>
+  </body>
+</html>

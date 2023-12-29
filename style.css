@@ -1,0 +1,103 @@
+.custom-card {
+  max-width: 400px;
+  margin: auto;
+}
+
+.custom-form-group {
+  margin-bottom: 10px;
+}
+
+.custom-input {
+  width: 100%;
+}
+
+#eventForm {
+  display: none;
+  position: fixed;
+  top: 0px;
+  /* Adjust the top space as needed */
+  left: 0;
+  width: 100%;
+  padding: 0px;
+  margin-left: 300px;
+  z-index: 1000;
+}
+
+.card-body {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+#calander-container {
+  box-shadow: 0 60px 80px rgba(0, 0, 0, 0.6), 0 45px 26px rgba(0, 0, 0, 0.14);
+}
+
+.submitButton {
+  display: flex;
+  height: 6vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.submitButton button {
+  font-size: 16px;
+}
+
+.button {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid #4f46e4;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #4f46e4;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+.button:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #4f46e4;
+  z-index: -1;
+}
+
+button:hover,
+button:focus {
+  color: white;
+}
+
+button:hover:before,
+button:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+body {
+  background: radial-gradient(circle, #4f46e4 10%, transparent 11%),
+    radial-gradient(circle at bottom left, #4f46e4 5%, transparent 6%),
+    radial-gradient(circle at bottom right, #4f46e4 5%, transparent 6%),
+    radial-gradient(circle at top left, #4f46e4 5%, transparent 6%),
+    radial-gradient(circle at top right, #4f46e4 5%, transparent 6%);
+  background-size: 4em 4em;
+  background-color: #e6fffd;
+  opacity: 1;
+}
